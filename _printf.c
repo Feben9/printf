@@ -1,5 +1,3 @@
-#include <stdio.h>
-#include <stdarg.h>
 #include "main.h"
 /**
  * _printf - a function to print anything
@@ -16,9 +14,9 @@ int _printf(const char *format, ...)
 
 	char buffer[BUFF_SIZE];
 	
-	va_list ap;
+	va_list list;
 
-	va_start(ap, format);
+	va_start(list, format);
 
 	if (format == NULL)
 		return (-1);
